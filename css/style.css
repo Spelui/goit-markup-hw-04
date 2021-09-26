@@ -94,12 +94,28 @@ p{
 }
 
 .menu-link{
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 32px 0;
 }
 
 .header-adress{
   display: flex;
+}
+
+.icon{
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.icon-mail{
+  width: 16px;
+  height: 12px;
+}
+
+.icon-phone{
+  width: 10px;
+  height: 16px;
 }
 
 .header-adress > .menu-link{
@@ -118,6 +134,10 @@ p{
 /* hero */
 
 .hero{
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: #2F303A;
   text-align: center;
   padding: 200px 0;
@@ -165,6 +185,7 @@ p{
   display: flex;
   list-style: none;
 }
+
 
 .benefits-item + .benefits-item{
   margin-left: 30px;
