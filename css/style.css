@@ -3,6 +3,7 @@
   --title-text: #212121;
   --text-accent: #2196F3;
   --white: #ffffff;
+  --icon: #AFB1B8;
 }
 
 body{
@@ -291,6 +292,16 @@ p{
   color: var(--text-color);
 }
 
+.team-social{
+  display: flex;
+}
+
+.icon-inst{
+  width: 20px;
+  height: 20px;
+  fill: var(--icon);
+}
+
 /* footer */
 
 .footer{
@@ -390,12 +401,13 @@ p{
   margin-top: 30px;
   margin-left: 30px;
   border-bottom: 1px solid #EEEEEE;
-  padding-bottom: 20px;
 
   background: var(--white);
 }
 
 .filter-link{
+  display: block;
+  
   text-decoration: none;
 }
 
@@ -418,6 +430,5 @@ p{
 }
 
 .filter-desc{
-  padding: 20px 0;
-  margin-left: 24px;
+  padding: 20px 24px;
 }
