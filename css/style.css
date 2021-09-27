@@ -48,7 +48,6 @@ p{
 
 .header > .container{
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -101,6 +100,7 @@ p{
 
 .header-adress{
   display: flex;
+  margin-left: auto;
 }
 
 .icon{
@@ -183,12 +183,29 @@ p{
 
 .benefits-list{
   display: flex;
+  align-items: center;
   list-style: none;
 }
 
 
 .benefits-item + .benefits-item{
   margin-left: 30px;
+}
+
+.bg-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.benefits-icon{
+  width: 70px;
+  height: 70px;
 }
 
 .benefits-title{
@@ -249,16 +266,22 @@ p{
 }
 
 .team-item{
-  padding-bottom: 30px;
-
   background: var(--white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.item-title{
-  margin-top: 30px;
+.team-img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
+.team-desc{
+  padding: 30px 0;
+}
+
+.item-title{
   font-weight: 500;
 }
 
@@ -388,7 +411,13 @@ p{
   color: var(--text-color);
 }
 
-.filter-title,
-.filter-text{
+.filter-cover{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.filter-desc{
+  padding: 20px 0;
   margin-left: 24px;
 }
