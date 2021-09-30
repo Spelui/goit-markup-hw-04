@@ -4,6 +4,9 @@
   --text-accent: #2196F3;
   --white: #ffffff;
   --icon: #AFB1B8;
+  --same-bg: #F5F4FA;
+  --filter-card: #EEEEEE;
+  --hero-bg: #2F303A;
 }
 
 body{
@@ -141,7 +144,7 @@ p{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: #2F303A;
+  background-color: var(--hero-bg);
   text-align: center;
   padding: 200px 0;
   max-width: 1600px;
@@ -206,7 +209,7 @@ p{
   align-items: center;
   width: 270px;
   height: 120px;
-  background-color: #F5F4FA;
+  background-color: var(--same-bg);
   border-radius: 4px;
   margin-bottom: 30px;
 }
@@ -253,7 +256,7 @@ p{
 /* team */
 
 .team{
-  background: #F5F4FA;
+  background: var(--same-bg);
 }
 
 .team-title{
@@ -471,12 +474,8 @@ p{
   margin-left: 8px;
 }
 
-.filter-btn{
-  padding: 6px 22px;
-}
-
 .btn{
-  background-color: #F5F4FA;
+  background-color: var(--same-bg);
   border: none;
   border-radius: 4px;
   padding: 6px 22px;
@@ -507,7 +506,6 @@ p{
   flex-basis: calc(100% / 3 - 30px);
   margin-top: 30px;
   margin-left: 30px;
-  border-bottom: 1px solid #EEEEEE;
   transition-duration: 0.25s;
 
   background: var(--white);
@@ -544,4 +542,6 @@ p{
 
 .filter-desc{
   padding: 20px 24px;
+  border: 1px solid var(--filter-card);
+  border-top: none;
 }
